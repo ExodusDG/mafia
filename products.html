@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gradient: 'linear-gradient(94.83deg,#ca16e8 -2.31%,#ff4853 95.06%);',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body style="background-color: white;">
+    <section class="productHeader py-[0px]">
+        <div class="navbar flex items-center justify-between">
+            <a class="logotype flex p-3 items-center" href="/">
+                <img class="h-5 mr-2" src="images/logotype.png" alt="logotype">
+                <p class="tracking-[.1em] text-white uppercase text-[22px] spacing-5">Product Mafia</p>
+            </a>
+            <div class="flex">
+                <div class="navbarSearch right-[80px]">
+                    <input type="text" name="navSearch" id="navSearch" placeholder="Search Products">
+                    <img src="images/magnifying-glass-solid.svg" alt="Search">
+                </div>
+                <div class="navbarLogin relative right-[40px] items-center flex cursor-pointer">
+                    <p class="mr-10">Hi, David</p>
+                    <div class="navbarHamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="navbarMenu p-4">
+                        <ul>
+                            <li><a href="#">Profile & Settings</a></li>
+                            <li><a href="#">Saved Products</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="productBody pt-[50px]">
+        <div class="productContainer">
+            <div class="productFilter w-[350px]"></div>
+            <div class="productItems w-[1160px]">
+                <h1>WE FOUND <span></span> WINNING DROPSHIPPNG PRODUCTS</h1>
+                <div class="productItemsList grid ">
+                    <div class="productListItem rounded-xl">
+                        <div class="text-right">
+                            <div class="productListItemPrice py-[7px] px-[10px] text-[14px]"><span
+                                    class="font-bold mr-1">¥-1,066.46 JPY </span> Profit</div>
+                        </div>
+                        <div class="productItemsListImage my-[20px] w-[100%] h-[250px]">
+                            <img class="w-[100%]" src="images/New-Neck-Fan-Portable-2.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productSort w-[350px]"></div>
+        </div>
+    </section>
+</body>
+
+</html>
