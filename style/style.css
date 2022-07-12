@@ -598,6 +598,103 @@ a {
     transform: translate(0) !important;
 }
 
+/* PRODUCT */
+
+.productHeader {
+    background-image: linear-gradient(142.08deg, #130110, #1b2047 87.73%);
+}
+
+.navbarSearch {
+    position: relative;
+}
+
+.navbarSearch img {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 20px;
+}
+
+.navbarSearch input {
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    height: 30px;
+    width: 225px;
+}
+
+.navbarSearch input::placeholder {
+    font-size: 14px;
+}
+
+.navbarLogin p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.navbarHamburger div {
+    height: 3px;
+    background: white;
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.navbarLogin {
+    display: flex;
+}
+
+.productHeader {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.navbarMenu {
+    background: #1b2047;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(27, 32, 71, 0.5);
+    box-shadow: 0px 0px 15px 5px rgba(27, 32, 71, 0.5);
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 9999;
+}
+
+.navbarMenu a {
+    color: white;
+}
+
+.productContainer {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productItems {
+    margin: 0 auto;
+}
+
+.productItems h1 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.productItemsList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.productListItem {
+    background: white;
+    padding: 10px;
+    padding-top: 20px;
+    box-shadow: 0 5px 11px rgb(218 218 218 / 50%);
+    -moz-box-shadow: 0 5px 11px rgba(218,218,218,0.5);
+    -webkit-box-shadow: 0 5px 11px rgb(218 218 218 / 50%);
+}
+
 @media (max-width: 1367px) {
     .headerProductVisible {
         grid-template-columns: repeat(3, 1fr);
@@ -719,6 +816,74 @@ a {
 
     .footerContentLeft p {
         max-width: 70%;
+    }
+}
+
+@media (max-width: 769px) {
+    .products {
+        padding: 150px 20px;
+    }
+
+    .metrics>div,
+    .premium>div {
+        display: block;
+    }
+
+    .metrics img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .premium img {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .shopItem>div {
+        width: 100%;
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .shopItem img,
+    source {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .shopItemTitle {
+        max-width: 100%;
+    }
+
+    .shopItemDesc {
+        max-width: 90%;
+    }
+
+    .shopEmodji {
+        max-width: initial;
+    }
+
+    .headerProductVisible {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .headerProductItem {
+        width: 213px !important;
+        height: 280px !important;
+    }
+
+    .headerProductItemImage {
+        height: 208px !important;
+    }
+
+    .headerProductVisible :nth-child(2n) {
+        transform: none;
+    }
+
+    .headerProductVisible :nth-child(3n-1) {
+        transform: translateY(40px);
     }
 }
 
@@ -949,18 +1114,23 @@ a {
     .join {
         padding: 60px 20px;
     }
+
     .footerContent {
         flex-wrap: wrap;
     }
+
     .footerContentLeft p {
         max-width: 100%;
     }
+
     .footerContentLeft {
         flex: 0 0 calc(60% + 133px);
     }
+
     .footerContentRight {
         flex: 0 0 100%;
     }
+
     .footerContentRight {
         margin-top: 20px;
     }
@@ -970,21 +1140,27 @@ a {
     .headerContent h1 {
         margin-top: 50px;
     }
+
     .headerContentReviewText {
         max-width: 300px;
     }
+
     .headerProductVisibleMask button {
         padding: 10px 35px 10px 35px;
     }
+
     .products h1 {
         font-size: 50px;
     }
+
     .products {
         padding: 60px 20px;
     }
+
     .drop h1 {
         font-size: 13vw;
     }
+
     .drop {
         padding: 60px 20px;
     }
@@ -994,15 +1170,19 @@ a {
     .headerProductVisible {
         gap: 10px;
     }
+
     .headerProductItemImage {
         height: 172px !important;
     }
+
     .mbText {
         font-size: 13px !important;
     }
+
     .headerProductItem {
         height: 256px !important;
     }
+
     .blueButton {
         width: 100%;
     }
